@@ -10,7 +10,7 @@ $('.mobile-start').click(function(){
 })
 function Paginator(e) {
     e.preventDefault()
-    console.log($(this).attr('id'))
+    
     switch ($(this).attr('class')) {
         case 'link-1':
             $('.tela').slideUp(0)
