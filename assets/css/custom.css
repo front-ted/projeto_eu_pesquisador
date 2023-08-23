@@ -1,0 +1,452 @@
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, p {
+    font-family: 'Space Grotesk', sans-serif;
+}
+h3, h4 {
+    color: #984186;
+}
+video {
+    background-color: #333;
+    display: block;
+    height: 300px;
+    width: 540px;
+    margin: 30px auto;
+}
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+.inicial {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/bg-capa.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    width: 791px;
+    height: 78px;
+    background-image: url('../img/barra-pesquisa.png');
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+}
+h1 {
+    font-size: 21px;
+    color: #333;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-top: -5px;
+}
+.menu {
+    height: 105px;
+    width: 100%;
+    background-color: #0a4684;
+    position: absolute;
+    bottom: 40px;
+    box-shadow: -4px 4px 8px #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.bt-print {
+    position: absolute;
+    z-index: 100;
+    top: -80px;
+    right: 40px;
+}
+.container-print {
+    position: absolute;
+}
+.menu a {
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    width: fit-content;
+    max-width: 195px;
+    font-size: 16px;
+    margin: 0 20px;
+    text-decoration: none;
+    position: relative;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+.menu a::before {
+    content: '';
+    height: 22px;
+    width: 24px;
+    position: absolute;
+    left: -20px;
+    top: 6px;
+    background-image: url('../img/svg/icone-angle-down.svg');
+}
+.tela-1, .tela-2, .tela-3, .tela-4, .tela-5, .tela-6, .tela-7 {
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+.logo {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+}
+header {
+    height: 230px;    
+    background-position: 25% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+header h2 {
+    color: white;
+}
+.header-1 {
+    background-image: url('../img/paralax-introducao.png');
+}
+.header-2 {
+    background-image: url('../img/paralax-onde-buscar.png');
+    background-position: 25% 35%;
+}
+.header-3 {
+    background-image: url('../img/paralax-desafio.png');
+    background-position: 25% 35%;
+}
+.header-4 {
+    background-image: url('../img/paralax-como-usar.png');
+    background-position: 25% 35%;
+}
+.header-5 {
+    background-image: url('../img/paralax-encerramento.png');
+    background-position: 25% 35%;
+}
+.header-6 {
+    background-image: url('../img/paralax-06.png');
+    background-position: 25% 35%;
+}
+.header-7 {
+    background-image: url('../img/paralax-07.png');
+    background-position: 25% 35%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    margin: 20px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 40px;
+}
+footer a:hover {
+    color: rgb(81, 81, 81);
+}
+footer a:first-of-type::before {
+    /* background-image: url('../img/svg/'); */
+}
+.print {
+    display: none;
+}
+.caixa {
+    border: 3px solid #984186;
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin: 30px auto;
+}
+.caixa.icone {
+    padding-left: 130px;
+    position: relative;
+}
+.icone.atencao::before {
+    content: '';
+    background-image: url('../img/icone-atencao.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 81px;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.icone.verificacao::before {
+    content: '';
+    background-image: url('../img/icone-verificacao.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 81px;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.icone.dica::before {
+    content: '';
+    background-image: url('../img/icone-dica.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 81px;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.caixa p {
+    margin: 0;
+}
+.dicas {
+    margin: 45px auto;
+    display: block;
+}
+.infografico {
+    background-image: url('../img/infografico-chat.png');
+    height: 351px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 15px;
+}
+.infografico p {
+    color: white;
+    font-size: 17px;
+    width: 600px;
+    margin: 0;
+    line-height: 25px;
+}
+.painel_prancheta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.painel_prancheta .btn-1, .painel_prancheta .btn-2 {
+    height: 207px;
+    width: 201px;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+}
+.btn-1:hover, .btn-2:hover {
+    transform: scale(1.05);
+}
+.btn-1 {
+    background-image: url('../img/btn-1.png');
+}
+.btn-2 {
+    background-image: url('../img/btn-2.png');
+}
+.bt-download {
+    width: 306px;
+    height: 61px;
+    background-image: url('../img/bt-download.png');
+    display: block;
+    margin: 45px auto;
+}
+.bt-download:hover {
+    transform: scale(1.03);
+}
+.bg-podcast {
+    background-image: url('../img/podcast-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+}
+.bg-podcast .timestamp {
+    color: white;
+}
+.audio-player::before, .audio-player::after, .bg-podcast::after, .bg-podcast > div::after {
+    display: none;
+}
+.audio-player .btn-play {
+    /* background-image: url('../img/svg/icone-play.svg'); */
+}
+.modal-dialog-centered .modal-content::before {
+    display: none;
+}
+.modal-header {
+    background: #fff;
+    border-bottom: 1px solid #333;
+
+}
+.modal-header .btn-close {
+    filter: unset;
+}
+.modal-header h5 {
+    color: #333;
+}
+.modal-body {
+    border: none;
+}
+.painel_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url('../img/painel-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px auto;
+}
+.painel_2 button {
+    background: rgb(148,64,129);
+    background: linear-gradient(90deg, rgba(148,64,129,1) 0%, rgba(244,149,52,1) 100%); 
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    padding: 15px;
+    border: none;
+    width: 250px;
+    margin: 5px;
+}
+.painel_2 button:hover {
+    background: #0a4684;
+}
+a.disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.mobile-start {
+    position: absolute;
+    bottom: 250px;
+    border-radius: 10px;
+    padding: 10px 25px;
+    border: none;
+    background: rgb(148,64,129);
+    background: linear-gradient(90deg, rgba(148,64,129,1) 0%, rgba(244,149,52,1) 100%);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1000px) {
+    .menu {
+        height: auto;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .menu a {
+        width: 25%;
+        min-height: 50px;
+    }
+    .infografico {
+        background-image: url('../img/infografico-chat-mobile.png');
+        height: 941px;
+        width: 401px;
+        padding-top: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+        margin: 30px auto;
+    }
+    .infografico p {
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+    .mobile-start {
+        display: block;
+    }
+    .titulo {
+        width: fit-content;
+        height: auto;
+        background-image: unset;
+        background-color: white;
+        padding: 20px;
+        margin: auto;
+    }
+    .header-1, .header-2, .header-3, .header-4, .header-5, .header-6, .header-7 {
+        background: rgb(148,64,129);
+        background: linear-gradient(90deg, rgba(148,64,129,1) 0%, rgba(244,149,52,1) 100%);
+        text-align: center;
+    }
+    video {
+        max-width: 100%;
+    }
+    footer {
+        display: none;
+    }
+    .infografico {
+        width: 100%;
+        background-size: cover;
+    }
+    .bt-print {
+        display: none;
+    }
+    .tela-1 .bt-print {
+        display: block;
+    }
+    .logo {
+        right: unset;
+        left: 49%;
+        transform: translateX(-50%);
+        top: unset;
+        bottom: 100px;
+    }
+    .painel_prancheta {
+        flex-direction: column;
+    }
+    .painel_2 {
+        background-image: unset;
+        background-color: white;
+        align-items: center;
+    }
+    .esquemaDaBru .alt-c, .esquemaDaBru .alt-e {
+        width: auto;
+    }
+    .bg-podcast {
+        background-size: cover;
+        background-position: 20% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .caixa {
+        text-align: center;
+    }
+    .caixa.icone {
+        padding-left: 40px;
+        padding-top: 120px;
+        position: relative;
+    }
+    .caixa.icone::before {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
