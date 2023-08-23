@@ -339,6 +339,7 @@ a.disabled {
     color: white;
     font-size: 18px;
     font-weight: 600;
+    display: none;
 }
 
 figcaption {
